@@ -1,0 +1,9 @@
+{
+  "slug": "deeplearning-ai-skill-builder",
+  "name": "DeepLearning.AI Skill Builder",
+  "description": "集成 Andrew Ng 的 DeepLearning.AI Skill Builder，帮助用户评估AI技能",
+  "version": "1.0.0",
+  "author": "OpenClaw",
+  "trigger": ["AI技能评估", "深度学习技能", "AI学习建议", "skill builder", "deeplearning"],
+  "url": "https://skillbuilder.deeplearning.ai"
+}

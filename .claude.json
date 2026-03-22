@@ -1,0 +1,186 @@
+{
+  "numStartups": 13,
+  "installMethod": "global",
+  "tipsHistory": {
+    "new-user-warmup": 1,
+    "plan-mode-for-complex-tasks": 1,
+    "terminal-setup": 2,
+    "memory-command": 2,
+    "theme-command": 6,
+    "colorterm-truecolor": 6,
+    "status-line": 8,
+    "prompt-queue": 8,
+    "enter-to-steer-in-relatime": 8,
+    "todo-list": 8,
+    "ide-upsell-external-terminal": 9,
+    "install-github-app": 9,
+    "install-slack-app": 10,
+    "drag-and-drop-images": 10,
+    "double-esc-code-restore": 10,
+    "continue": 10,
+    "shift-tab": 10,
+    "image-paste": 10,
+    "permissions": 11,
+    "rename-conversation": 11
+  },
+  "promptQueueUseCount": 2,
+  "firstStartTime": "2026-03-08T04:53:10.521Z",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "userID": "YOUR_USER_ID",
+  "clientDataCache": {
+    "data": null,
+    "timestamp": 1772945590600
+  },
+  "changelogLastFetched": 1773272059471,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.71",
+  "lastReleaseNotesSeen": "2.1.73",
+  "projects": {
+    "/home/admin": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 3,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "lastCost": 0.32438075,
+      "lastAPIDuration": 24720,
+      "lastAPIDurationWithoutRetries": 24714,
+      "lastToolDuration": 27,
+      "lastDuration": 22209498,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 14067,
+      "lastTotalOutputTokens": 574,
+      "lastTotalCacheCreationInputTokens": 29639,
+      "lastTotalCacheReadInputTokens": 108904,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.02,
+      "lastFpsLow1Pct": 125.44,
+      "lastModelUsage": {
+        "MiniMax-M2.1": {
+          "inputTokens": 14067,
+          "outputTokens": 574,
+          "cacheReadInputTokens": 108904,
+          "cacheCreationInputTokens": 29639,
+          "webSearchRequests": 0,
+          "costUSD": 0.32438075
+        }
+      },
+      "lastSessionId": "c116b532-784d-445a-a46b-074b49def314",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 489,
+        "frame_duration_ms_min": 0.03132200241088867,
+        "frame_duration_ms_max": 15.27541999999994,
+        "frame_duration_ms_avg": 0.5263554479040033,
+        "frame_duration_ms_p50": 0.24844499677419662,
+        "frame_duration_ms_p95": 2.270457600802183,
+        "frame_duration_ms_p99": 7.018653920888906,
+        "pre_tool_hook_duration_ms_count": 3,
+        "pre_tool_hook_duration_ms_min": 0,
+        "pre_tool_hook_duration_ms_max": 0,
+        "pre_tool_hook_duration_ms_avg": 0,
+        "pre_tool_hook_duration_ms_p50": 0,
+        "pre_tool_hook_duration_ms_p95": 0,
+        "pre_tool_hook_duration_ms_p99": 0,
+        "hook_duration_ms_count": 2,
+        "hook_duration_ms_min": 0,
+        "hook_duration_ms_max": 1,
+        "hook_duration_ms_avg": 0.5,
+        "hook_duration_ms_p50": 0.5,
+        "hook_duration_ms_p95": 0.95,
+        "hook_duration_ms_p99": 0.99
+      }
+    },
+    "/home/admin/.openclaw/workspace": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastCost": 0.26449475,
+      "lastAPIDuration": 65132,
+      "lastAPIDurationWithoutRetries": 65125,
+      "lastToolDuration": 636,
+      "lastDuration": 288975,
+      "lastLinesAdded": 70,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 15979,
+      "lastTotalOutputTokens": 1360,
+      "lastTotalCacheCreationInputTokens": 15019,
+      "lastTotalCacheReadInputTokens": 113462,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 4.25,
+      "lastFpsLow1Pct": 257.38,
+      "lastModelUsage": {
+        "MiniMax-M2.1": {
+          "inputTokens": 15979,
+          "outputTokens": 1360,
+          "cacheReadInputTokens": 113462,
+          "cacheCreationInputTokens": 15019,
+          "webSearchRequests": 0,
+          "costUSD": 0.26449475
+        }
+      },
+      "lastSessionId": "33b86ee2-d4bf-4648-8011-635e7aa76683",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 1222,
+        "frame_duration_ms_min": 0.04752799999550916,
+        "frame_duration_ms_max": 16.057757000000038,
+        "frame_duration_ms_avg": 0.48028556219314805,
+        "frame_duration_ms_p50": 0.41317399999388726,
+        "frame_duration_ms_p95": 0.7487706999997495,
+        "frame_duration_ms_p99": 3.5470026799992214,
+        "hook_duration_ms_count": 2,
+        "hook_duration_ms_min": 1,
+        "hook_duration_ms_max": 663,
+        "hook_duration_ms_avg": 332,
+        "hook_duration_ms_p50": 332,
+        "hook_duration_ms_p95": 629.9,
+        "hook_duration_ms_p99": 656.38,
+        "pre_tool_hook_duration_ms_count": 7,
+        "pre_tool_hook_duration_ms_min": 0,
+        "pre_tool_hook_duration_ms_max": 1,
+        "pre_tool_hook_duration_ms_avg": 0.2857142857142857,
+        "pre_tool_hook_duration_ms_p50": 0,
+        "pre_tool_hook_duration_ms_p95": 1,
+        "pre_tool_hook_duration_ms_p99": 1
+      }
+    }
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "toolUsage": {
+    "Bash": {
+      "usageCount": 4,
+      "lastUsedAt": 1773030118728
+    },
+    "Glob": {
+      "usageCount": 1,
+      "lastUsedAt": 1772980764248
+    },
+    "Read": {
+      "usageCount": 1,
+      "lastUsedAt": 1772980766386
+    },
+    "Write": {
+      "usageCount": 1,
+      "lastUsedAt": 1773030145351
+    }
+  },
+  "showSpinnerTree": false,
+  "githubRepoPaths": {
+    "invictusautomation/admin-home": [
+      "/home/admin"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{"type":"queue-operation","operation":"enqueue","timestamp":"2026-03-11T23:34:18.728Z","sessionId":"4829cb95-8a76-4354-b870-36eebdfe4733","content":"hello"}
+{"type":"queue-operation","operation":"dequeue","timestamp":"2026-03-11T23:34:18.731Z","sessionId":"4829cb95-8a76-4354-b870-36eebdfe4733"}
+{"parentUuid":null,"isSidechain":false,"promptId":"d1d05535-8804-45cd-852f-8f2c2674b10f","userType":"external","cwd":"/home/admin/.openclaw/workspace","sessionId":"4829cb95-8a76-4354-b870-36eebdfe4733","version":"2.1.73","gitBranch":"main","type":"user","message":{"role":"user","content":"hello"},"uuid":"afd99c75-01d3-418f-92a1-0243d6c5fbc7","timestamp":"2026-03-11T23:34:20.754Z","permissionMode":"default"}
+{"type":"last-prompt","lastPrompt":"hello","sessionId":"4829cb95-8a76-4354-b870-36eebdfe4733"}

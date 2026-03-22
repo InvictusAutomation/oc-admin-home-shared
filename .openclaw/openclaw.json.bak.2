@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.9",
+    "lastTouchedAt": "2026-03-12T13:29:30.360Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-08T14:29:11.831Z",
+    "lastRunVersion": "2026.2.9",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "alibaba-cloud:default": {
+        "provider": "alibaba-cloud",
+        "mode": "api_key"
+      },
+      "minimax-portal:default": {
+        "provider": "minimax-portal",
+        "mode": "oauth"
+      },
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "token"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "alibaba-cloud-international": {
+        "baseUrl": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-thinking",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          }
+        ]
+      },
+      "minimax-portal": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "apiKey": "YOUR_GETNOTE_API_KEY",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "MiniMax-M2.1",
+            "name": "MiniMax M2.1",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2.1-lightning",
+            "name": "MiniMax M2.1 Lightning",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax-portal/MiniMax-M2.1",
+        "fallbacks": [
+          "alibaba-cloud/qwen3-max-2026-01-23",
+          "minimax-portal/MiniMax-M2.1-lightning"
+        ]
+      },
+      "imageModel": {
+        "primary": "alibaba-cloud-international/qwen3-vl-plus"
+      },
+      "models": {
+        "anthropic/claude-opus-4-6": {
+          "alias": "opus"
+        }
+      },
+      "workspace": "/home/admin/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": true,
+    "nativeSkills": true
+  },
+  "cron": {
+    "enabled": true
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "port": 17969,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "basePath": "a5081079",
+      "allowInsecureAuth": true
+    },
+    "auth": {
+      "mode": "password",
+      "password": "YOUR_GATEWAY_PASSWORD"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "reload": {
+      "mode": "restart"
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        },
+        "responses": {
+          "enabled": true
+        }
+      }
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "calendar.add",
+        "contacts.add",
+        "reminders.add"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "alibaba-cloud-auth": {
+        "enabled": false
+      },
+      "qqbot": {
+        "enabled": true
+      },
+      "dingtalk": {
+        "enabled": true
+      },
+      "wecom": {
+        "enabled": true
+      },
+      "alibaba-cloud-international-auth": {
+        "enabled": false
+      },
+      "minimax-portal-auth": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "skillhub": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "qqbot": {
+        "source": "path",
+        "sourcePath": "/home/admin/qqbot",
+        "installPath": "/home/admin/.openclaw/extensions/qqbot",
+        "version": "1.4.4",
+        "installedAt": "2026-02-10T14:06:13.661Z"
+      },
+      "dingtalk": {
+        "source": "npm",
+        "spec": "https://github.com/soimy/clawdbot-channel-dingtalk.git",
+        "installPath": "/home/admin/.openclaw/extensions/dingtalk",
+        "version": "2.5.1",
+        "installedAt": "2026-02-10T14:07:10.219Z"
+      },
+      "wecom": {
+        "source": "path",
+        "sourcePath": "/home/admin/openclaw-plugin-wecom",
+        "installPath": "/home/admin/.openclaw/extensions/wecom",
+        "version": "1.2.1",
+        "installedAt": "2026-02-10T14:08:38.715Z"
+      }
+    }
+  }
+}

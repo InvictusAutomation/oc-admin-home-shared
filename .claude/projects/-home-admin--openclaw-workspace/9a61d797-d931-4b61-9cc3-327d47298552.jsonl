@@ -1,0 +1,2 @@
+{"type":"queue-operation","operation":"enqueue","timestamp":"2026-03-08T08:04:38.873Z","sessionId":"9a61d797-d931-4b61-9cc3-327d47298552","content":"hello"}
+{"type":"queue-operation","operation":"dequeue","timestamp":"2026-03-08T08:04:38.876Z","sessionId":"9a61d797-d931-4b61-9cc3-327d47298552"}
